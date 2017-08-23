@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="2dp"
+    android:orientation="horizontal"
+    android:background="@color/primaryTextColor"
+    >
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="2dp"
+        android:layout_weight="0.15"
+        app:srcCompat="@mipmap/to_do"
+        />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.70"
+        android:layout_marginRight="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@color/transparent"
+            >
+
+                <TextView
+                    android:id="@+id/ToDoItem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="0.60"
+                    android:text="TextView"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceButton"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@color/transparent"
+            >
+
+                <TextView
+                    android:id="@+id/Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Status - : Complete"
+                    android:gravity="center_vertical"
+                    />
+
+
+                <TextView
+                    android:id="@+id/Priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Priority - : High"
+                    android:gravity="center_vertical"
+                />
+
+                 <TextView
+                    android:id="@+id/Notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:paddingRight="4dp"
+                    android:text="Notes - : Testing List data on 8/20/2017 for codepath"
+                    android:gravity="center_vertical"
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/Delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@mipmap/delete"
+        android:background="@color/transparent"
+        android:layout_marginRight="2dp"
+        android:layout_weight="0.15"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="text_default" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="screen_default" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+</resources>

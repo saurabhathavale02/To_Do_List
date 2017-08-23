@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+    <string name="copyright">CopyRight</string>
+    <string name="version">Version 1.0.0</string>
+    <string name="name">To_Do Name</string>
+    <string name="priority">Priority</string>
+    <string name="Status">Status</string>
+    <string name="description">Notes</string>
+    <string name="Add">Add To List</string>
+    <string name="date">Select Date</string>
+    <string-array name="prioritylist">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="statuslist">
+        <item>Start</item>
+        <item>In Review</item>
+        <item>Complete</item>
+    </string-array>
+</resources>

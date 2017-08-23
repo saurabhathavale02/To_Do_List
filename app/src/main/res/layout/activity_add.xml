@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saurabh.to_do_list.AddActivity"
+    android:orientation="vertical"
+   >
+
+    <include
+        layout="@layout/customtab"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="3dp"
+            >
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/notesdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="3dp"
+            >
+            <EditText
+                android:id="@+id/Notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description"
+                android:maxLines="1"
+                android:layout_margin="2dp"
+                android:padding="5dp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/PrioritySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/priority"
+            app:met_floatingLabel="normal"
+            android:textColorHint="#05ab9a"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/StatusSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Status"
+            app:met_floatingLabel="normal"
+            android:textColorHint="#05ab9a"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/SelectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:background="@drawable/roundedbutton"
+            />
+
+        <Button
+            android:id="@+id/AddToList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:background="@drawable/roundedbutton"
+            android:text="@string/Add" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
