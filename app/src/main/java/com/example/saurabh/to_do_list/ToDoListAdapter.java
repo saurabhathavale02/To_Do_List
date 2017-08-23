@@ -78,6 +78,7 @@ public class ToDoListAdapter extends RecyclerView.Adapter<ToDoListAdapter.ViewHo
         holder.Notes.setText("Notes - : "+ToDoList.get(position).getToDoNotes());
         holder.Status.setText("Status - : "+ToDoList.get(position).getStatus());
         holder.Priority.setText("Priority - : "+ToDoList.get(position).getPriority());
+        holder.Date.setText(String.valueOf(ToDoList.get(position).getDate()));
         holder.ID.setText(String.valueOf(ToDoList.get(position).getId()));
 
     }
@@ -92,7 +93,7 @@ public class ToDoListAdapter extends RecyclerView.Adapter<ToDoListAdapter.ViewHo
 
         public final View mView;
 
-        public final TextView Notes,Status,Priority,Name,ID;
+        public final TextView Notes,Status,Priority,Name,ID,Date;
         public final ImageButton Delete;
 
         public ViewHolder(View view) {
@@ -103,6 +104,7 @@ public class ToDoListAdapter extends RecyclerView.Adapter<ToDoListAdapter.ViewHo
             Status = (TextView) view.findViewById(R.id.Status);
             Priority=(TextView) view.findViewById(R.id.Priority);
             Name=(TextView) view.findViewById(R.id.ToDoItem);
+            Date=(TextView) view.findViewById(R.id.Date);
             Delete=(ImageButton) view.findViewById(R.id.Delete);
         }
     }
